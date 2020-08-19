@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        title="ETN"
+        style
+            include styles/home.css
+    body
+        main(contenteditable=true id="main" u=u placeholder="Write anything here") #{n}
+        script(defer)
+            include scripts/notepad.js
+        script(defer)
+            include scripts/todo.js
+        div.side
+            h1 Todo list
+            ul(id="list")
+                each val in t
+                    li(onkeyup="emptycheck(this)")
+                        span(contenteditable=true)=val
+            ul
+                li(id="new" onclick="newitem()") +
+        div.signout(onclick="window.location='/signout'" title="Sign out") &#128075;

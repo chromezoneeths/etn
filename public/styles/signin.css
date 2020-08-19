@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background: #041f30;
+    margin: 0;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+main{
+    padding: 10%;
+}
+
+input{
+    display: block;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+input[type="text"], input[type="password"]{
+    width: 30%;
+}
+
+p.fail{
+    color: red;
+}
+
+main.center form{
+    text-align: center;
+}
+
+p,h1{
+    color: white;
+}
+
+a{
+    color: #ddddff;
+}
