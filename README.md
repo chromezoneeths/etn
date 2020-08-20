@@ -11,6 +11,8 @@ $ nano .env
 In the `.env`
 ```env
 SESSIONSECRET=whatever secret you want
+# optional (hosting on heroku or something)
+PORT=80
 ```
 CTRL+X  
 Y  

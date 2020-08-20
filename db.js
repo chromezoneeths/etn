@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const bcrypt = require('bcrypt');
  
-const url = 'mongodb://localhost:27017';
+const url = process.env.MONGOURI || 'mongodb://localhost:27017';
 const dbName = 'etn';
 
 function register(u,p,callback){

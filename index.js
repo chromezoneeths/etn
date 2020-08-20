@@ -97,4 +97,4 @@ app.post("/updatetodo", (req,res) => {
     res.status(204).end()
 });
 
-app.listen(8080); // change to 80
+app.listen(process.env.PORT);

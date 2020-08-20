@@ -2,5 +2,11 @@
     "name": "ETN",
     "version": "1.0",
     "description": "Evanston Township Notepad",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "chrome_url_overrides" : {
+        "newtab": "loadsite.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
 }
